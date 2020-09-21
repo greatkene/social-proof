@@ -1,0 +1,219 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/* Base Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan' , sans-serif;
+    font-size: 15px;
+}
+
+/* p {
+    font-size: 12px;
+    line-height: 1.8em;
+} */
+
+/* Variables */
+:root {
+	--very-dark-magenta: hsl(300, 43%, 22%);
+	--soft-pink: hsl(333, 80%, 67%);
+	--dark-grayish-magenta: hsl(303, 10%, 53%);
+	--light-grayish-magenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+}
+
+/* Layout styles */
+
+/*Flexbox layout starts*/
+
+.social {
+    justify-content: space-between;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 2em;
+    justify-content: center;
+} 
+
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+@media (min-width: 940px) {
+    .testimonial {
+        max-width: 80%;
+        margin-left: 5em;
+        justify-content: center;
+    }
+}
+/* flexbox layout ends*/
+
+.title {
+    margin-right: 4em;
+    margin-bottom: .5em;
+    font-size: 2em;
+}
+
+.texts {
+    margin-left: auto;
+    margin-top: 1em;
+    margin-right: 4em;
+    margin-bottom: .5em;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.social {
+    background-color: var(--white);
+    color: var(--very-dark-magenta);
+}
+
+.review {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: 4em;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: auto;
+}
+
+.stars {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.review-text {
+    font-weight: 700;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.card {
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    border-radius: .5rem;
+    width: 35%;
+    margin: 1rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+} 
+
+.card-image {
+    width: 20%;
+}
+
+.card-info {
+    width: 70%;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
+.card-title {
+    margin-left: 10%;
+}
+
+.card-subtitle {
+    color: var(--soft-pink);
+    margin-left: 10%;
+    margin-top: 5%;
+    font-weight: 100;
+}
+
+.card-text {
+    margin: 1em;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+/* Mobile Design*/
+
+@media (max-width: 785px) {
+
+
+    .header {
+        text-align: center;
+    }
+    
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin: 1em 0;
+        font-size: 2em;
+    }
+
+    .texts {
+        margin: 1.5em;
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+
+    .review {
+        margin: 1rem 1rem;
+        padding: 1rem;
+    }
+
+    .stars {
+        display: block;
+    }
+    
+    .review-text {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-right: 1rem;
+    }
+
+    .flex-box2 {
+        width: 100%;
+    }
+
+    .card {
+        padding: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        border-radius: 1em;
+        width: fit-content;
+    }
+
+    .card-text {
+        line-height: 1.5rem;
+        font-size: 13px;
+    }
+}
+
+/* Footer Style*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
